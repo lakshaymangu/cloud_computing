@@ -1,0 +1,93 @@
+[
+    {
+      "name": "Rohit Sharma",
+      "title": "Production Manager",
+      "department": "Manufacturing",
+      "bio": "Rohit Sharma is an experienced Production Manager who ensures the timely production and delivery of high-quality humidifiers. He has been with the company for over 10 years and has played an instrumental role in streamlining the production process."
+    },
+    {
+      "name": "Priyanka Singh",
+      "title": "Marketing Executive",
+      "department": "Marketing",
+      "bio": "Priyanka Singh is a dynamic Marketing Executive who has a keen eye for emerging market trends. With more than 6 years of experience, she has been successful in expanding the company's market presence and driving brand awareness."
+    },
+    {
+      "name": "Amit Patel",
+      "title": "Quality Assurance Manager",
+      "department": "Quality Control",
+      "bio": "Amit Patel has been in the Quality Assurance department for over 8 years. He is responsible for ensuring the highest quality of humidifiers by establishing stringent quality standards and overseeing the testing and inspection process."
+    },
+    {
+      "name": "Deepak Gupta",
+      "title": "Software Engineer",
+      "department": "Software Development",
+      "bio": "Deepak Gupta is a skilled Software Engineer who develops and maintains the software that powers the company's humidifiers. He has a strong background in embedded systems and IoT, which allows him to create innovative solutions for customers."
+    },
+    {
+      "name": "Anita Desai",
+      "title": "Customer Support Specialist",
+      "department": "Customer Service",
+      "bio": "Anita Desai is a compassionate Customer Support Specialist with a talent for resolving issues and providing top-notch service. She has been with the company for 4 years and has helped countless customers with their humidifier inquiries."
+    },
+    {
+      "name": "Rajesh Khanna",
+      "title": "Supply Chain Manager",
+      "department": "Logistics",
+      "bio": "Rajesh Khanna is an organized Supply Chain Manager who ensures the smooth flow of materials and products throughout the company's supply chain. He has over 12 years of experience in logistics and has been successful in reducing lead times and improving efficiency."
+    },
+    {
+      "name": "Sunita Agarwal",
+      "title": "Human Resources Manager",
+      "department": "Human Resources",
+      "bio": "Sunita Agarwal is a dedicated Human Resources Manager who has been with the company for over 7 years. She is responsible for recruiting top talent, managing employee relations, and overseeing the overall employee experience."
+    },
+    {
+      "name": "Vikas Rana",
+      "title": "Senior Electrical Engineer",
+      "department": "Research and Development",
+      "bio": "Vikas Rana is a highly skilled Senior Electrical Engineer who specializes in designing and optimizing the electrical systems of the company's humidifiers. With more than 10 years of experience, he has been instrumental in the development of several successful products."
+    },
+    {
+      "name": "Neha Kapoor",
+      "title": "Technical Writer",
+      "department": "Documentation",
+      "bio": "Neha Kapoor is a meticulous Technical Writer who creates clear and concise documentation for the company's humidifiers. She has been with the company for 5 years and has played a crucial role in improving the user experience through her work."
+    },
+    {
+      "name": "Rakesh Verma",
+      "title": "Sales Representative",
+      "department": "Sales",
+      "bio": "Rakesh Verma is a passionate Sales Representative who excels in building long-lasting relationships with clients. With over 5 years of experience in sales, he has a track record of exceeding targets and helping the company grow its customer base."
+    },
+    {
+    "name": "Geeta Arora",
+    "title": "Finance Manager",
+    "department": "Finance",
+    "bio": "Geeta Arora is a detail-oriented Finance Manager with more than 8 years of experience in managing the company's financial operations. She is responsible for budgeting, financial reporting, and ensuring the overall financial stability of the organization."
+    },
+    {
+    "name": "Alok Mehta",
+    "title": "Operations Manager",
+    "department": "Operations",
+    "bio": "Alok Mehta is a dedicated Operations Manager who oversees the day-to-day functioning of the company. With over 9 years of experience, he has been successful in streamlining processes and enhancing the overall operational efficiency of the organization."
+    },
+    {
+    "name": "Shweta Mishra",
+    "title": "Product Manager",
+    "department": "Product Management",
+    "bio": "Shweta Mishra is a strategic Product Manager with more than 7 years of experience in guiding the company's humidifier products from conception to market. She has a strong understanding of customer needs and is skilled in driving product improvements."
+    },
+    {
+    "name": "Gaurav Bhatia",
+    "title": "Senior Mechanical Engineer",
+    "department": "Research and Development",
+    "bio": "Gaurav Bhatia is an experienced Senior Mechanical Engineer who specializes in designing and developing the mechanical components of the company's humidifiers. With over 11 years of experience, he has contributed significantly to the success of numerous product launches."
+    },
+    {
+    "name": "Rashmi Aggarwal",
+    "title": "Graphic Designer",
+    "department": "Design",
+    "bio": "Rashmi Aggarwal is a creative Graphic Designer who is responsible for creating visually appealing marketing materials and product designs. With more than 6 years of experience, her artistic touch has contributed to the company's strong brand identity."
+    }
+]
+  

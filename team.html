@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR MIST</title>
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+   <nav>
+    <div class="menu">
+      <div class="logo">
+        <a><img src="image/logo2.png" alt="logo" width="200" height="80"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+<body>
+
+  <div class="team_img"></div>
+  <div class="team_center">
+    <div class="title1">Our Team</div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="image/SW1.png" alt="Smith" style="width:100%">
+        <div class="container">
+          <h2> Lakshay Mangu </h2>
+          <p class="title">Team Leader</p>
+          <p>Our products are the reflection of his dedication.</p>
+          <p><a href="mailto:c0875814@mylambton.ca"><button class="button">Contact</button></a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="image/SW2.png" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Pratyush Parmar</h2>
+          <p class="title">Sales Manager</p>
+          <p>Perfect defination of smart work.</p>
+          <p><a href="mailto:c0877499@mylambton.ca"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="image/SW3.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Khalak Nathvani</h2>
+          <p class="title">Web Designer</p>
+          <p>His creation, smiply beautiful.</p>
+          <p><a href="mailto:c0865178@mylambton.ca"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="image/SW4.png" alt="Smith" style="width:100%">
+        <div class="container">
+          <h2>Poonam Lama</h2>
+          <p class="title">Database Expert</p>
+          <p>Architect of digital data structures.</p>
+          <p><a href="mailto:c0877826@mylambton.ca"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="image/SW5.png" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Ritika Varma</h2>
+          <p class="title">AWS Developer</p>
+          <p>Navigator in the digital sky.</p>
+          <p><a href="mailto:c0875813@mylambton.ca"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="image/SW6.png" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Henil Thakkar</h2>
+          <p class="title">Product Designer</p>
+          <p>Shaping ideas into tangible realities.</p>
+          <p><a href="mailto:c0870556@mylambton.ca"><button class="button">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="employee-container"></div>
+
+  <script>
+      $(document).ready(function () {
+    $.getJSON("employees.json", function (employees) {
+        console.log(employees); // Add this line to check the JSON data
+        $.each(employees, function (index, employee) {
+            const employeeCard = `
+                <div class="employee-card">
+                    <div class="employee-name">${employee.name}</div>
+                    <div class="employee-title">${employee.title} - ${employee.department}</div>
+                    <div class="employee-bio">${employee.bio}</div>
+                </div>
+            `;
+            $("#employee-container").append(employeeCard);
+        });
+    });
+});
+
+  </script>
+
+</body>
+
+<footer>
+   <a href="mailto:info@airmist.com">Request Information</a> <br>
+   &copy;Copyright 2023.All Rights Reserved
+       
+</footer>
+
+</html>
+
+
+
+
+
+
+

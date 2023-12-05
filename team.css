@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+
+/* nav bar & menu */
+
+nav{
+  position: fixed;
+  background: transparent;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px 0 0 ;
+}
+.menu .logo {
+    margin-right: 20px;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+
+footer {
+    font-size: 0.7em;
+    text-align: center;
+    color: #fff;
+    background-color: #000 ;
+    padding-top: 250px;
+  }
+
+
+/* Specials Section */
+
+
+
+
+.team_center{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 50%;
+    padding: 0 20px 0 65px;
+    text-align: center;
+  }
+
+  .team_center .title1{
+    color: #fff;
+    font-size: 65px;
+    font-weight: 500;
+  }
+
+  .team_img{
+    background: url('image/humi7.jpg')no-repeat;
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .team_img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin: 100px auto;
+    padding: 0 10px;
+    text-align: center;
+    
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .employee-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+.employee-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.employee-title {
+    font-size: 1em;
+    color: #777;
+}
+.employee-bio {
+    font-size: 0.9em;
+    color: #333;
+}
+#employee-container {
+    display: flex;
+    flex-wrap: wrap;
+}

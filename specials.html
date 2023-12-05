@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR MIST</title>
+    <link rel="stylesheet" href="specials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      #search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      #search-input {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+      }
+      #search-icon {
+        color: white;
+        margin-left: -40px;
+        cursor: pointer;
+      }
+      #search-results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+      #search-results img {
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 4px;
+        width: 200px;
+        height: auto;
+      }
+    </style>
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a><img src="image/logo2.png" alt="logo" width="200" height="80"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact Us</a></li>s
+      </ul>
+    </div>
+  </nav>
+  <div class="specials_img"></div>
+  <div class="specials_center">
+    <div class="title">Intelligent Humidification.</div>
+  </div>
+  <div class="specials_img2">
+    <div class="title2">Ultraviolet Cleanse technology.</div>
+    <div class="sub_title2">Water from the tank is channelled along a specially designed cold cathode UV-C bulb.<br> It uses an intense shortwave light to penetrate cells and disrupt the DNA of organisms such as bacteria,<br> viruses and fungi. A three-minute cycle kills 99.9% of bacteria in the water.  </div>
+  </div>
+    
+  <div class="specials_img3">
+    <div class="title3">Piezoelectric transducer.</div>
+    <div class="sub_title3">The water runs into a chamber, where a piezoelectric <br>transducer converts a high-frequency electronic <br>signal into a high-frequency mechanical oscillation. <br>The transducer oscillates at 1.7 million times a second,<br> with this ultrasonic frequency atomizing the water into a fine mist.</div>
+  </div>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search for product images...">
+    <i id="search-icon" class="fas fa-search" style="color: aquamarine;"></i>
+  </div>
+  <div id="search-results"></div>
+  
+
+  <script>
+    $(document).ready(function() {
+      const apiKey = '7c4e8cc982ee2af2131eb80030958c3a';
+    
+      $('#search-icon').on('click', function() {
+        const searchText = $('#search-input').val();
+        searchFlickr(searchText);
+      });
+    
+      function searchFlickr(searchText) {
+        const flickrApiUrl = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${encodeURIComponent(searchText)}&format=json&nojsoncallback=1`;
+    
+        $.getJSON(flickrApiUrl, function(data) {
+          displaySearchResults(data.photos.photo);
+        });
+      }
+    
+      function displaySearchResults(photos) {
+        $('#search-results').empty();
+    
+        photos.forEach(function(photo) {
+          const imageUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_m.jpg`;
+          const img = $('<img>').attr('src', imageUrl);
+          $('#search-results').append(img);
+        });
+      }
+    });
+    </script>
+
+</body>
+
+<footer>
+   <a href="mailto:info@airmist.com">Request Information</a> <br>
+   &copy;Copyright 2023.All Rights Reserved
+       
+</footer>
+
+</html>
+
+
+

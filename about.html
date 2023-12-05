@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR MIST</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   </head>
+
+<nav>
+    <div class="menu">
+      <div class="logo">
+        <a><img src="image/logo2.png" alt="logo" width="200" height="80"></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+<body>
+  <div class="about_img"></div>
+ 
+  <div class="about_center">
+    <div class="title">Welcome to Air Mist</div>
+    <div class="sub_title">Humidifier that uses Ultraviolet Cleanse technology.</div>
+  </div>
+  <div class="about_img2">
+    <div class="title2">Dry air can be uncomfortable.</div>
+    <div class="sub_title2">Air Mist humidifiers precisely monitor temperature and humidity,<br> to maintain a hygienic room.</div>
+  </div>
+  <div class="about_img3">
+    <div class="title3">About Us <i class="fas fa-chevron-down" style="font-size: 25px;"></i></div>
+    <div class="sub_title3">It was in 1999, that the founders of Air Mist with their characteristic energy,<br> capability and vision laid the corner stone of a company that has grown what it is today and <br> been a reckoning name in the world of Humidifier.<br> Developing innovative ideas & pioneering engineering efforts has always been a challenge taken on.</div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('.title3').on('click', function () {
+        $('.sub_title3').slideToggle('slow', function() {
+          // Toggle arrow direction when the animation is completed
+          $('.title3 .fa-chevron-down').toggleClass('fa-chevron-up');
+        });
+      });
+    });
+  </script>
+  
+  
+</body>
+
+<footer>
+   <a href="mailto:info@airmist.com">Request Information</a> <br>
+   &copy;Copyright 2023.All Rights Reserved
+       
+</footer>
+
+</html>
+
